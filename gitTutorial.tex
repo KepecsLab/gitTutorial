@@ -6,7 +6,7 @@
 \usepackage{amsfonts}
 \usepackage{amssymb}
 \usepackage{hyperref}
-\author{Thiago S. Gouvêa}
+\author{Thiago S. Gouvêa \\ \vspace{1cm} \url{https://github.com/tsgouvea/gitTutorial}}
 \title{Using GitHub to version-control and collaborate}
 %\setbeamercovered{transparent} 
 %\setbeamertemplate{navigation symbols}{} 
@@ -25,18 +25,103 @@
 %\end{frame}
 
 \begin{frame}{\textbf{git} tracks your code history}
+\begin{quote}
+Git is a version control system that is used for software development and other version control tasks.
+\begin{flushright}
+\textit{--Wikipedia}
+\end{flushright}
+\end{quote}
+\begin{quote}
+Git is a mature, actively maintained open source project originally developed in 2005 by Linus Torvalds, the famous creator of the Linux operating system kernel
+\begin{flushright}
+\textit{--Atlassian's tutorial}
+\end{flushright}
+\end{quote}
+\begin{quote}
+Git is a free and open source distributed version control system designed to handle everything from small to very large projects with speed and efficiency.
+\begin{flushright}
+\textit{--The internets somewhere}
+\end{flushright}
+\end{quote}
+\end{frame}
 
+\begin{frame}{Who's using it?}
+\begin{description}
+\item[The Brazilian Government]{\url{https://github.com/govbr}} \\ \pause
+\item[Linus Torvalds]{\url{https://github.com/torvalds/linux}} \\ \pause
+\item[Josh]{\url{https://github.com/sanworks}} \pause
+\item[Someone mapping geographical distribution of Pokemons]{\url{https://github.com/AHAAAAAAA/PokemonGo-Map}} \pause
+\item[NASA]{\url{https://github.com/nasa}} \\ \pause
+\item[The Kepecs Lab]{\url{https://github.com/KepecsLab}}
+\end{description}
+\end{frame}
+
+\begin{frame}{software $\neq$ GUI $\neq$ hosting service}
+\begin{description}
+\item[git]{the software}
+\item[github/bitbucket]{hosting services}
+\item[SourceTree]{the graphical user interface (GUI)}
+\end{description}
+\end{frame}
+
+\begin{frame}{\textbf{git} vocabulary (part 1/2)}
+\begin{description}
+\item[repository]{A special folder in your computer (\textit{local repo}). \\ It is special because it is stalked by \textit{git}.\\ It is mirrored at some hosting service such as \textit{github.com} (\textit{remote repo.})} \pause
+\item[clone]{A local copy of a repo that exists in a remote location.} \pause
+\item[commit]{A landmark in the repo's history. \\A state of repo contents you judge worth saving. \\ You might create several a day, and push them often to the remote repo.} \pause
+\item[push]{\textit{Upload} in git lingo.} \pause
+\item[pull]{\textit{Download} in git lingo.}
+\end{description}
+\end{frame}
+
+\begin{frame}{Hands On!}
+\begin{itemize}
+\item Create a git account
+\item Download and install SourceTree (or go command line!)
+\item Create a 'Hello World!' repo
+\item Clone your repo
+\item Modify, commit, push
+\end{itemize}
+\end{frame}
+
+\begin{frame}{\url{github.com} tools for project management}
+\begin{itemize}
+\item Organizations
+\item Teams
+\item Issues
+\item Wiki
+\end{itemize}
+\end{frame}
+
+\begin{frame}{\textbf{git} vocabulary (part 2/2)}
+\begin{description}
+\item[tag]{A way to easily identify/locate commits of interest in the haystack} \pause
+\item[pull request]{A gentler, more sociable way of uploading. \\ You don't upload (push), you request that someone downloads (pulls) from you.} \pause
+\item[branch]{A parallel history thread within a repo} \pause
+\item[checkout]{Move between branches} \pause
+\item[detached head]{Creating new content at an ectopic site. \\ You should always be at the top of a branch (even if it's a new one)}
+\item[fork]{A separate copy of a repo. \\ Not to be confused with branches.} \pause
+\end{description}
+\end{frame}
+
+\begin{frame}{Tips}
+\begin{itemize}
+\item Keep branches simple
+\item Master should always be ready for deployment
+\item Pull requests are debates
+\item Internet is your friend (specially stackoverflow)
+\end{itemize}
 
 \end{frame}
 
 \begin{frame}{Further reading}
 \begin{description}
-\item[Atlassian tutorial]{\url{https://www.atlassian.com/git/tutorials/}}
-\item[\textbf{Gitflow}: a tried-and-tested strategy for using branches]{\url{http://nvie.com/posts/a-successful-git-branching-model/}}
+\item[\textbf{Git} official documentation]{\url{https://git-scm.com/docs/gittutorial}}
+\item[Atlassian's \textbf{git} tutorial]{\url{https://www.atlassian.com/git/tutorials/}}
+\item[Atlassian's \textbf{SourceTree}/BitBucket tutorial]{\url{https://confluence.atlassian.com/bitbucket/tutorial-learn-sourcetree-with-bitbucket-cloud-760120235.html}}
+\item[\textbf{GitFlow}: a tried-and-tested strategy for using branches]{\url{http://nvie.com/posts/a-successful-git-branching-model/}}
 \item[How github uses github to build github]{\url{https://youtu.be/qyz3jkOBbQY}}
 \end{description}
-
-
 \end{frame}
 
 \end{document}
